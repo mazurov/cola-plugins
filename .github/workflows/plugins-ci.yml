@@ -119,7 +119,7 @@ jobs:
           package-format: 'both'  # Create ZIP archives AND push to OCI registry
           oci-registry: 'ghcr.io/${{ github.repository_owner }}'
           oci-username: ${{ github.actor }}
-          oci-token: ${{ secrets.GITHUB_TOKEN }}
+          oci-token: ${{ secrets.OCI_TOKEN }}
 
       - name: Generate release notes
         id: release-notes

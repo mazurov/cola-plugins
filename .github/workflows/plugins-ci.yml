@@ -7,14 +7,14 @@
 # DO NOT use this in the cola-plugin-action repository itself!
 # ==============================================================================
 
-name: Plugin CI/CD Pipeline
+name: Package CI/CD Pipeline
 
 on:
   push:
     # Validate on pushes to ANY branch
     # Only main/develop will create releases (controlled by job conditions)
     paths:
-      - 'plugins/**'
+      - 'packages/**'
       - '.github/workflows/plugins-ci.yml'
   pull_request:
     # Validate on ALL pull requests (regardless of target branch)
